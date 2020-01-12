@@ -1,5 +1,9 @@
 import React from 'react';
-import './App.css';
+import { HomeSection } from './components/homeSection';
+import { Product } from './components/product';
+import { Employee } from './components/employee';
+import { PhoneNumber } from './components/phoneNumber';
+
 
 function App() {
 	return (
@@ -55,44 +59,12 @@ function App() {
 				</div>
 			</nav>
 
-			<section id="home-section" className="hero">
-				<div className="home-slider owl-carousel">
-					<div className="slider-item" /*style="background-image: url(images/bg_1.jpg);"*/>
-						<div className="overlay"></div>
-						<div className="container">
-							<div className="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-
-								<div className="col-md-12 ftco-animate text-center">
-									<h1 className="mb-2">We serve Fresh Vegestables &amp; Fruits</h1>
-									<h2 className="subheading mb-4">We deliver organic vegetables &amp; fruits</h2>
-									<p><a href="#" className="btn btn-primary">View Details</a></p>
-								</div>
-
-							</div>
-						</div>
-					</div>
-
-					<div className="slider-item" /*style="background-image: url(images/bg_2.jpg);"*/>
-						<div className="overlay"></div>
-						<div className="container">
-							<div className="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-
-								<div className="col-sm-12 ftco-animate text-center">
-									<h1 className="mb-2">100% Fresh &amp; Organic Foods</h1>
-									<h2 className="subheading mb-4">We deliver organic vegetables &amp; fruits</h2>
-									<p><a href="#" className="btn btn-primary">View Details</a></p>
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+			<HomeSection />
 
 			<section className="ftco-section">
 				<div className="container">
 					<div className="row no-gutters ftco-services">
-						<div className="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+						<div className="col-md-3 text-center d-flex align-self-stretch ">
 							<div className="media block-6 services mb-md-0 mb-4">
 								<div className="icon bg-color-1 active d-flex justify-content-center align-items-center mb-2">
 									<span className="flaticon-shipped"></span>
@@ -103,7 +75,7 @@ function App() {
 								</div>
 							</div>
 						</div>
-						<div className="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+						<div className="col-md-3 text-center d-flex align-self-stretch ">
 							<div className="media block-6 services mb-md-0 mb-4">
 								<div className="icon bg-color-2 d-flex justify-content-center align-items-center mb-2">
 									<span className="flaticon-diet"></span>
@@ -114,7 +86,7 @@ function App() {
 								</div>
 							</div>
 						</div>
-						<div className="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+						<div className="col-md-3 text-center d-flex align-self-stretch ">
 							<div className="media block-6 services mb-md-0 mb-4">
 								<div className="icon bg-color-3 d-flex justify-content-center align-items-center mb-2">
 									<span className="flaticon-award"></span>
@@ -125,7 +97,7 @@ function App() {
 								</div>
 							</div>
 						</div>
-						<div className="col-md-3 text-center d-flex align-self-stretch ftco-animate">
+						<div className="col-md-3 text-center d-flex align-self-stretch ">
 							<div className="media block-6 services mb-md-0 mb-4">
 								<div className="icon bg-color-4 d-flex justify-content-center align-items-center mb-2">
 									<span className="flaticon-customer-service"></span>
@@ -146,7 +118,7 @@ function App() {
 						<div className="col-md-8">
 							<div className="row">
 								<div className="col-md-6 order-md-last align-items-stretch d-flex">
-									<div className="category-wrap-2 ftco-animate img align-self-stretch d-flex" /*style="background-image: url(images/category.jpg);"*/>
+									<div className="category-wrap-2  img align-self-stretch d-flex" style={{ backgroundImage: 'url(images/category.jpg)' }}>
 										<div className="text text-center">
 											<h2>Vegetables</h2>
 											<p>Protect the health of every home</p>
@@ -155,12 +127,12 @@ function App() {
 									</div>
 								</div>
 								<div className="col-md-6">
-									<div className="category-wrap ftco-animate img mb-4 d-flex align-items-end"/* style="background-image: url(images/category-1.jpg);"*/>
+									<div className="category-wrap  img mb-4 d-flex align-items-end" style={{ backgroundImage: 'url(images/category-1.jpg)' }}>
 										<div className="text px-3 py-1">
 											<h2 className="mb-0"><a href="#">Fruits</a></h2>
 										</div>
 									</div>
-									<div className="category-wrap ftco-animate img d-flex align-items-end"/* style="background-image: url(images/category-2.jpg);"*/>
+									<div className="category-wrap  img d-flex align-items-end" style={{ backgroundImage: 'url(images/category-2.jpg)' }}>
 										<div className="text px-3 py-1">
 											<h2 className="mb-0"><a href="#">Vegetables</a></h2>
 										</div>
@@ -170,12 +142,12 @@ function App() {
 						</div>
 
 						<div className="col-md-4">
-							<div className="category-wrap ftco-animate img mb-4 d-flex align-items-end" /*style="background-image: url(images/category-3.jpg);"*/>
+							<div className="category-wrap  img mb-4 d-flex align-items-end" style={{ backgroundImage: 'url(images/category-3.jpg)' }}>
 								<div className="text px-3 py-1">
 									<h2 className="mb-0"><a href="#">Juices</a></h2>
 								</div>
 							</div>
-							<div className="category-wrap ftco-animate img d-flex align-items-end"/* style="background-image: url(images/category-4.jpg);"*/>
+							<div className="category-wrap  img d-flex align-items-end" style={{ backgroundImage: 'url(images/category-4.jpg)' }}>
 								<div className="text px-3 py-1">
 									<h2 className="mb-0"><a href="#">Dried</a></h2>
 								</div>
@@ -188,7 +160,7 @@ function App() {
 			<section className="ftco-section">
 				<div className="container">
 					<div className="row justify-content-center mb-3 pb-3">
-						<div className="col-md-12 heading-section text-center ftco-animate">
+						<div className="col-md-12 heading-section text-center ">
 							<span className="subheading">Featured Products</span>
 							<h2 className="mb-4">Our Products</h2>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
@@ -197,242 +169,37 @@ function App() {
 				</div>
 				<div className="container">
 					<div className="row">
-						<div className="col-md-6 col-lg-3 ftco-animate">
-							<div className="product">
-								<a href="#" className="img-prod"><img className="img-fluid" src="images/product-1.jpg" alt="Colorlib Template" />
-									<span className="status">30%</span>
-									<div className="overlay"></div>
-								</a>
-								<div className="text py-3 pb-4 px-3 text-center">
-									<h3><a href="#">Bell Pepper</a></h3>
-									<div className="d-flex">
-										<div className="pricing">
-											<p className="price"><span className="mr-2 price-dc">$120.00</span><span className="price-sale">$80.00</span></p>
-										</div>
-									</div>
-									<div className="bottom-area d-flex px-3">
-										<div className="m-auto d-flex">
-											<a href="#" className="add-to-cart d-flex justify-content-center align-items-center text-center">
-												<span><i className="ion-ios-menu"></i></span>
-											</a>
-											<a href="#" className="buy-now d-flex justify-content-center align-items-center mx-1">
-												<span><i className="ion-ios-cart"></i></span>
-											</a>
-											<a href="#" className="heart d-flex justify-content-center align-items-center ">
-												<span><i className="ion-ios-heart"></i></span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div className="col-md-6 col-lg-3 ">
+							<Product productImg="images/product-1.jpg" productStatus='30%' productName='Bell Pepper' oldPrice='$120.00' price='$80.00' />
 						</div>
-						<div className="col-md-6 col-lg-3 ftco-animate">
-							<div className="product">
-								<a href="#" className="img-prod"><img className="img-fluid" src="images/product-2.jpg" alt="Colorlib Template" />
-									<div className="overlay"></div>
-								</a>
-								<div className="text py-3 pb-4 px-3 text-center">
-									<h3><a href="#">Strawberry</a></h3>
-									<div className="d-flex">
-										<div className="pricing">
-											<p className="price"><span>$120.00</span></p>
-										</div>
-									</div>
-									<div className="bottom-area d-flex px-3">
-										<div className="m-auto d-flex">
-											<a href="#" className="add-to-cart d-flex justify-content-center align-items-center text-center">
-												<span><i className="ion-ios-menu"></i></span>
-											</a>
-											<a href="#" className="buy-now d-flex justify-content-center align-items-center mx-1">
-												<span><i className="ion-ios-cart"></i></span>
-											</a>
-											<a href="#" className="heart d-flex justify-content-center align-items-center ">
-												<span><i className="ion-ios-heart"></i></span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div className="col-md-6 col-lg-3 ">
+							<Product productImg="images/product-2.jpg" productName='Strawberry' price='$120.00' />
 						</div>
-						<div className="col-md-6 col-lg-3 ftco-animate">
-							<div className="product">
-								<a href="#" className="img-prod"><img className="img-fluid" src="images/product-3.jpg" alt="Colorlib Template" />
-									<div className="overlay"></div>
-								</a>
-								<div className="text py-3 pb-4 px-3 text-center">
-									<h3><a href="#">Green Beans</a></h3>
-									<div className="d-flex">
-										<div className="pricing">
-											<p className="price"><span>$120.00</span></p>
-										</div>
-									</div>
-									<div className="bottom-area d-flex px-3">
-										<div className="m-auto d-flex">
-											<a href="#" className="add-to-cart d-flex justify-content-center align-items-center text-center">
-												<span><i className="ion-ios-menu"></i></span>
-											</a>
-											<a href="#" className="buy-now d-flex justify-content-center align-items-center mx-1">
-												<span><i className="ion-ios-cart"></i></span>
-											</a>
-											<a href="#" className="heart d-flex justify-content-center align-items-center ">
-												<span><i className="ion-ios-heart"></i></span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div className="col-md-6 col-lg-3 ">
+							<Product productImg="images/product-3.jpg" productName='Green Beans' price='$120.00' />
 						</div>
-						<div className="col-md-6 col-lg-3 ftco-animate">
-							<div className="product">
-								<a href="#" className="img-prod"><img className="img-fluid" src="images/product-4.jpg" alt="Colorlib Template" />
-									<div className="overlay"></div>
-								</a>
-								<div className="text py-3 pb-4 px-3 text-center">
-									<h3><a href="#">Purple Cabbage</a></h3>
-									<div className="d-flex">
-										<div className="pricing">
-											<p className="price"><span>$120.00</span></p>
-										</div>
-									</div>
-									<div className="bottom-area d-flex px-3">
-										<div className="m-auto d-flex">
-											<a href="#" className="add-to-cart d-flex justify-content-center align-items-center text-center">
-												<span><i className="ion-ios-menu"></i></span>
-											</a>
-											<a href="#" className="buy-now d-flex justify-content-center align-items-center mx-1">
-												<span><i className="ion-ios-cart"></i></span>
-											</a>
-											<a href="#" className="heart d-flex justify-content-center align-items-center ">
-												<span><i className="ion-ios-heart"></i></span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div className="col-md-6 col-lg-3 ">
+							<Product productImg="images/product-4.jpg" productName='Purple Cabbage' price='$120.00' />
 						</div>
-
-
-						<div className="col-md-6 col-lg-3 ftco-animate">
-							<div className="product">
-								<a href="#" className="img-prod"><img className="img-fluid" src="images/product-5.jpg" alt="Colorlib Template" />
-									<span className="status">30%</span>
-									<div className="overlay"></div>
-								</a>
-								<div className="text py-3 pb-4 px-3 text-center">
-									<h3><a href="#">Tomatoe</a></h3>
-									<div className="d-flex">
-										<div className="pricing">
-											<p className="price"><span className="mr-2 price-dc">$120.00</span><span className="price-sale">$80.00</span></p>
-										</div>
-									</div>
-									<div className="bottom-area d-flex px-3">
-										<div className="m-auto d-flex">
-											<a href="#" className="add-to-cart d-flex justify-content-center align-items-center text-center">
-												<span><i className="ion-ios-menu"></i></span>
-											</a>
-											<a href="#" className="buy-now d-flex justify-content-center align-items-center mx-1">
-												<span><i className="ion-ios-cart"></i></span>
-											</a>
-											<a href="#" className="heart d-flex justify-content-center align-items-center ">
-												<span><i className="ion-ios-heart"></i></span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div className="col-md-6 col-lg-3 ">
+							<Product productImg="images/product-5.jpg" productStatus='30%' productName='Tomatoe' oldPrice='$120.00' price='$80.00' />
 						</div>
-						<div className="col-md-6 col-lg-3 ftco-animate">
-							<div className="product">
-								<a href="#" className="img-prod"><img className="img-fluid" src="images/product-6.jpg" alt="Colorlib Template" />
-									<div className="overlay"></div>
-								</a>
-								<div className="text py-3 pb-4 px-3 text-center">
-									<h3><a href="#">Brocolli</a></h3>
-									<div className="d-flex">
-										<div className="pricing">
-											<p className="price"><span>$120.00</span></p>
-										</div>
-									</div>
-									<div className="bottom-area d-flex px-3">
-										<div className="m-auto d-flex">
-											<a href="#" className="add-to-cart d-flex justify-content-center align-items-center text-center">
-												<span><i className="ion-ios-menu"></i></span>
-											</a>
-											<a href="#" className="buy-now d-flex justify-content-center align-items-center mx-1">
-												<span><i className="ion-ios-cart"></i></span>
-											</a>
-											<a href="#" className="heart d-flex justify-content-center align-items-center ">
-												<span><i className="ion-ios-heart"></i></span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div className="col-md-6 col-lg-3 ">
+							<Product productImg="images/product-6.jpg" productName='Brocolli' price='$120.00' />
 						</div>
-						<div className="col-md-6 col-lg-3 ftco-animate">
-							<div className="product">
-								<a href="#" className="img-prod"><img className="img-fluid" src="images/product-7.jpg" alt="Colorlib Template" />
-									<div className="overlay"></div>
-								</a>
-								<div className="text py-3 pb-4 px-3 text-center">
-									<h3><a href="#">Carrots</a></h3>
-									<div className="d-flex">
-										<div className="pricing">
-											<p className="price"><span>$120.00</span></p>
-										</div>
-									</div>
-									<div className="bottom-area d-flex px-3">
-										<div className="m-auto d-flex">
-											<a href="#" className="add-to-cart d-flex justify-content-center align-items-center text-center">
-												<span><i className="ion-ios-menu"></i></span>
-											</a>
-											<a href="#" className="buy-now d-flex justify-content-center align-items-center mx-1">
-												<span><i className="ion-ios-cart"></i></span>
-											</a>
-											<a href="#" className="heart d-flex justify-content-center align-items-center ">
-												<span><i className="ion-ios-heart"></i></span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div className="col-md-6 col-lg-3 ">
+							<Product productImg="images/product-7.jpg" productName='Carrots' price='$120.00' />
 						</div>
-						<div className="col-md-6 col-lg-3 ftco-animate">
-							<div className="product">
-								<a href="#" className="img-prod"><img className="img-fluid" src="images/product-8.jpg" alt="Colorlib Template" />
-									<div className="overlay"></div>
-								</a>
-								<div className="text py-3 pb-4 px-3 text-center">
-									<h3><a href="#">Fruit Juice</a></h3>
-									<div className="d-flex">
-										<div className="pricing">
-											<p className="price"><span>$120.00</span></p>
-										</div>
-									</div>
-									<div className="bottom-area d-flex px-3">
-										<div className="m-auto d-flex">
-											<a href="#" className="add-to-cart d-flex justify-content-center align-items-center text-center">
-												<span><i className="ion-ios-menu"></i></span>
-											</a>
-											<a href="#" className="buy-now d-flex justify-content-center align-items-center mx-1">
-												<span><i className="ion-ios-cart"></i></span>
-											</a>
-											<a href="#" className="heart d-flex justify-content-center align-items-center ">
-												<span><i className="ion-ios-heart"></i></span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
+						<div className="col-md-6 col-lg-3 ">
+							<Product productImg="images/product-8.jpg" productName='Fruit Juice' price='$120.00' />
 						</div>
 					</div>
 				</div>
 			</section>
-
-			<section className="ftco-section img" /*style="background-image: url(images/bg_3.jpg);"*/>
+			<section className="ftco-section img" style={{ backgroundImage: 'url(images/bg_3.jpg)' }}>
 				<div className="container">
 					<div className="row justify-content-end">
-						<div className="col-md-6 heading-section ftco-animate deal-of-the-day ftco-animate">
+						<div className="col-md-6 heading-section  deal-of-the-day ">
 							<span className="subheading">Best Price For You</span>
 							<h2 className="mb-4">Deal of the day</h2>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
@@ -452,85 +219,21 @@ function App() {
 			<section className="ftco-section testimony-section">
 				<div className="container">
 					<div className="row justify-content-center mb-5 pb-3">
-						<div className="col-md-7 heading-section ftco-animate text-center">
+						<div className="col-md-7 heading-section  text-center">
 							<span className="subheading">Testimony</span>
 							<h2 className="mb-4">Our satisfied customer says</h2>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
 						</div>
 					</div>
-					<div className="row ftco-animate">
+					<div className="row ">
 						<div className="col-md-12">
 							<div className="carousel-testimony owl-carousel">
-								<div className="item">
-									<div className="testimony-wrap p-4 pb-5">
-										<div className="user-img mb-5" /*style="background-image: url(images/person_1.jpg)"*/>
-											<span className="quote d-flex align-items-center justify-content-center">
-												<i className="icon-quote-left"></i>
-											</span>
-										</div>
-										<div className="text text-center">
-											<p className="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-											<p className="name">Garreth Smith</p>
-											<span className="position">Marketing Manager</span>
-										</div>
-									</div>
-								</div>
-								<div className="item">
-									<div className="testimony-wrap p-4 pb-5">
-										<div className="user-img mb-5" /*style="background-image: url(images/person_2.jpg)"*/>
-											<span className="quote d-flex align-items-center justify-content-center">
-												<i className="icon-quote-left"></i>
-											</span>
-										</div>
-										<div className="text text-center">
-											<p className="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-											<p className="name">Garreth Smith</p>
-											<span className="position">Interface Designer</span>
-										</div>
-									</div>
-								</div>
-								<div className="item">
-									<div className="testimony-wrap p-4 pb-5">
-										<div className="user-img mb-5" /*style="background-image: url(images/person_3.jpg)"*/>
-											<span className="quote d-flex align-items-center justify-content-center">
-												<i className="icon-quote-left"></i>
-											</span>
-										</div>
-										<div className="text text-center">
-											<p className="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-											<p className="name">Garreth Smith</p>
-											<span className="position">UI Designer</span>
-										</div>
-									</div>
-								</div>
-								<div className="item">
-									<div className="testimony-wrap p-4 pb-5">
-										<div className="user-img mb-5" /*style="background-image: url(images/person_1.jpg)"*/>
-											<span className="quote d-flex align-items-center justify-content-center">
-												<i className="icon-quote-left"></i>
-											</span>
-										</div>
-										<div className="text text-center">
-											<p className="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-											<p className="name">Garreth Smith</p>
-											<span className="position">Web Developer</span>
-										</div>
-									</div>
-								</div>
-								<div className="item">
-									<div className="testimony-wrap p-4 pb-5">
-										<div className="user-img mb-5" /*style="background-image: url(images/person_1.jpg)"*/>
-											<span className="quote d-flex align-items-center justify-content-center">
-												<i className="icon-quote-left"></i>
-											</span>
-										</div>
-										<div className="text text-center">
-											<p className="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-											<p className="name">Garreth Smith</p>
-											<span className="position">System Analyst</span>
-										</div>
-									</div>
-								</div>
+								<Employee backgroundImage="images/person_1.jpg" position='Marketing Manager' />
+								<Employee backgroundImage="images/person_2.jpg" position='Interface Designer' />
+								<Employee backgroundImage="images/person_3.jpg" position='UI Designer' />
+								<Employee backgroundImage="images/person_1.jpg" position='Web Developer' />
+								<Employee backgroundImage="images/person_1.jpg" position='System Analyst' />
+
 							</div>
 						</div>
 					</div>
@@ -540,19 +243,19 @@ function App() {
 			<section className="ftco-section ftco-partner">
 				<div className="container">
 					<div className="row">
-						<div className="col-sm ftco-animate">
+						<div className="col-sm ">
 							<a href="#" className="partner"><img src="images/partner-1.png" className="img-fluid" alt="Colorlib Template" /></a>
 						</div>
-						<div className="col-sm ftco-animate">
+						<div className="col-sm ">
 							<a href="#" className="partner"><img src="images/partner-2.png" className="img-fluid" alt="Colorlib Template" /></a>
 						</div>
-						<div className="col-sm ftco-animate">
+						<div className="col-sm ">
 							<a href="#" className="partner"><img src="images/partner-3.png" className="img-fluid" alt="Colorlib Template" /></a>
 						</div>
-						<div className="col-sm ftco-animate">
+						<div className="col-sm ">
 							<a href="#" className="partner"><img src="images/partner-4.png" className="img-fluid" alt="Colorlib Template" /></a>
 						</div>
-						<div className="col-sm ftco-animate">
+						<div className="col-sm ">
 							<a href="#" className="partner"><img src="images/partner-5.png" className="img-fluid" alt="Colorlib Template" /></a>
 						</div>
 					</div>
@@ -563,13 +266,14 @@ function App() {
 				<div className="container py-4">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-md-6">
-							<h2 /*style="font-size: 22px;" */className="mb-0">Subcribe to our Newsletter</h2>
+							<h2 style={{ fontSize: '22px' }} className="mb-0">Subcribe to our Newsletter</h2>
 							<span>Get e-mail updates about our latest shops and special offers</span>
 						</div>
 						<div className="col-md-6 d-flex align-items-center">
 							<form action="#" className="subscribe-form">
 								<div className="form-group d-flex">
 									<input type="text" className="form-control" placeholder="Enter email address" />
+									<PhoneNumber/>
 									<input type="submit" value="Subscribe" className="submit px-3" />
 								</div>
 							</form>
@@ -592,9 +296,9 @@ function App() {
 								<h2 className="ftco-heading-2">Vegefoods</h2>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
 								<ul className="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-									<li className="ftco-animate"><a href="#"><span className="icon-twitter"></span></a></li>
-									<li className="ftco-animate"><a href="#"><span className="icon-facebook"></span></a></li>
-									<li className="ftco-animate"><a href="#"><span className="icon-instagram"></span></a></li>
+									<li className=""><a href="#"><span className="icon-twitter"></span></a></li>
+									<li className=""><a href="#"><span className="icon-facebook"></span></a></li>
+									<li className=""><a href="#"><span className="icon-instagram"></span></a></li>
 								</ul>
 							</div>
 						</div>
