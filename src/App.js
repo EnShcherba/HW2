@@ -3,6 +3,8 @@ import { HomeSection } from './components/homeSection';
 import { Product } from './components/product';
 import { Employee } from './components/employee';
 import { PhoneNumber } from './components/phoneNumber';
+import { NavBar } from './components/navbar';
+import './navbar.css'
 
 
 function App() {
@@ -60,6 +62,7 @@ function App() {
 			</nav>
 
 			<HomeSection />
+			<NavBar items={['Home', 'Search', 'About']} initialActiveItemId="Home" />
 
 			<section className="ftco-section">
 				<div className="container">

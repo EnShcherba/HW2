@@ -23,7 +23,7 @@ export class PhoneNumber extends React.Component {
                 type="phone"
                 className="form-control"
                 placeholder="Phone number"
-                maxlength="13"
+                maxLength="13"
                 style={{ ...this.showRedBorder()}}
                 value={this.state.phoneNumber}
                 onChange={this.onChange}
